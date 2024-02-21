@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Long Road To Valhalla trailer officiel</title>
+    <title>A Long Road To Valhalla</title>
     <link rel="icon" href="../logotest.png" type="image/png">
     <link rel="stylesheet" href="../CSS/site.css">
     <script src="../javascript/Site.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><strong>A Long Road To Valhalla</strong></h1>
+        <img src="../logotest.png" alt="Logo du jeu">
         <nav>
-            <a href="artwork.html">Artwork</a>
+            <ul>
+                <li><a href="Site.html">Accueil</a></li>
+                <li><a href="art.html">Artwork</a></li>
+                <li><a href="Apropos.html">A propos</a></li>
+                <li><a href="lore.html">Lore</a></li>
+            </ul>
         </nav>
+        <div class="active" id="loginActive">
+            <button id="loginBtn">Connexion</button>
+            <div id="loginForm" class="loginForm hidden">
+                <form>
+                    <input type="text" placeholder="Nom d'utilisateur">
+                    <input type="password" placeholder="Mot de passe">
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
+        </div>
     </header>
- 
     <div class="container">
-        <h2>Trailer officiel</h2>
-        <video controls>
-            <source src="votre-video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
+        <div class="video-container">
+            <img src="../test.gif" alt="Trailer du jeu" class="video">
+        </div>
     </div>
-
+    <div class="container">
+        <h1>Lore</h1>
+        <div class="lore">
+            <img src="../lore1.jpg" alt="Lore 1" class="lore">
+            <p>Ceci est du texte</p>
+        </div>
+        <div class="lore">
+            <img src="../lore2.jpg" alt="Lore 2" class="lore">
+        </div>
     <footer>
         <p>Site réalisé par <strong>L'équipe A Long Road To Valhalla</strong></p>
     </footer>
